@@ -55,24 +55,23 @@ This project demonstrates **user authentication, blog post creation, editing, an
    npm install connect-mongo
    npm install bcryptjs
    npm install multer
-
-
 3. **Install dev dependency (for auto-reload during development)**
    ```bash
    npm install nodemon --save-dev
-
 ▶️ Running the Application
 
 Start the app using nodemon:
-
-- npx nodemon app.js
-
-- Or run directly:
-   
- - node app.js 
-#or
-- npm start
-
+```
+npx nodemon app.js`
+```
+**Or run directly:**
+```
+node app.js
+```
+**or**
+```
+npm start
+```
 
 **Now open your browser and go to:**
 👉 http://localhost:8080
@@ -80,7 +79,7 @@ Start the app using nodemon:
 ---
 
 📂 Folder Structure
-
+```
 blog-upgrade/
 ├── config/
 │   └── db.js               # MongoDB connection setup
@@ -114,8 +113,8 @@ blog-upgrade/
 ├── app.js                   # Main Express server
 ├── package-lock.json
 ├── package.json
-└── txt.txt
-
+└── txt.txt`
+```
 ---
 
 ## 💾 Database Setup
@@ -123,16 +122,15 @@ blog-upgrade/
 - Install MongoDB locally and start the MongoDB server.
 - Database name: blogsdb
 - Update MongoDB connection string in config/db.js:
-
+```
 const mongoose = require('mongoose');
-
 mongoose.connect('mongodb://127.0.0.1:27017/blogsdb', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
 .then(() => console.log("MongoDB connected successfully"))
 .catch(err => console.error("MongoDB connection error:", err));
-
+```
 ## Collections:
 - users → Stores user data
 - posts → Stores blog posts with creation/update timestamps
@@ -166,11 +164,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/blogsdb', {
 ## 📚 Project Information
 
 - **Project Name:** Blogify – MERN Stack Training Project
-
 - **Semester:** MCA 3rd Sem (2025)
-
 - **Institute:** Geetanjali Institute of Technical Studies
-
 - **Developer:** Kavita Sharma
-
 - **Project Goal:** Learn full-stack development with Node.js, Express, EJS, and MongoDB through a real-world blog application
