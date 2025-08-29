@@ -64,11 +64,14 @@ This project demonstrates **user authentication, blog post creation, editing, an
 ▶️ Running the Application
 
 Start the app using nodemon:
-npx nodemon app.js
 
-Or run directly:
+- npx nodemon app.js
+
+- Or run directly:
    
-   node app.js
+ - node app.js 
+#or
+- npm start
 
 
 **Now open your browser and go to:**
@@ -76,37 +79,30 @@ Or run directly:
 
 ---
 
-## 📂 Folder Structure
+📂 Folder Structure
 
 blog-upgrade/
-│
-├── config
+├── config/
 │   └── db.js               # MongoDB connection setup
-│
-├── controllers
+├── controllers/
 │   ├── authController.js   # Handles user signup/login
 │   └── postController.js   # Handles create/edit/view/delete posts
-│
-├── middleware
+├── middleware/
 │   ├── authMiddleware.js   # Protect routes for authenticated users
 │   └── uploadMiddleware.js # Handles file uploads
-│
-├── models
+├── models/
 │   ├── Post.js             # Post schema
 │   └── User.js             # User schema
-│
-├── public
-│   ├── css
+├── public/
+│   ├── css/
 │   │   └── style.css
-│   ├── images
+│   ├── images/
 │   │   └── blogify.png
-│   └── uploads             # Uploaded images
-│
-├── routes
+│   └── uploads/            # Uploaded images
+├── routes/
 │   ├── auth.js             # Auth routes
 │   └── post.js             # Post routes
-│
-├── views
+├── views/
 │   ├── allPosts.ejs
 │   ├── editPost.ejs
 │   ├── login.ejs
@@ -115,7 +111,6 @@ blog-upgrade/
 │   ├── register.ejs
 │   ├── viewPost.ejs
 │   └── welcome.ejs
-│
 ├── app.js                   # Main Express server
 ├── package-lock.json
 ├── package.json
