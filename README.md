@@ -73,6 +73,7 @@ Or run directly:
 
 **Now open your browser and go to:**
 👉 http://localhost:8080
+
 ---
 
 ## 📂 Folder Structure
@@ -120,13 +121,13 @@ blog-upgrade/
 ├── package.json
 └── txt.txt
 
+---
+
 ## 💾 Database Setup
 
-Install MongoDB locally and start the MongoDB server.
-
-Database name: blogsdb
-
-Update MongoDB connection string in config/db.js:
+- Install MongoDB locally and start the MongoDB server.
+- Database name: blogsdb
+- Update MongoDB connection string in config/db.js:
 
 const mongoose = require('mongoose');
 
@@ -137,12 +138,11 @@ mongoose.connect('mongodb://127.0.0.1:27017/blogsdb', {
 .then(() => console.log("MongoDB connected successfully"))
 .catch(err => console.error("MongoDB connection error:", err));
 
+## Collections:
+- users → Stores user data
+- posts → Stores blog posts with creation/update timestamps
 
-Collections:
-
-users → Stores user data
-
-posts → Stores blog posts with creation/update timestamps
+---
 
 ## 📦 Dependencies
 
@@ -156,6 +156,8 @@ posts → Stores blog posts with creation/update timestamps
 - **multer** – Handles file uploads
 - **nodemon** – Auto-restarts server during development
 
+---
+
 ## 🚀 Future Enhancements
 
 - 🌐 Social login (Google, Facebook)
@@ -163,15 +165,17 @@ posts → Stores blog posts with creation/update timestamps
 - 📝 Rich text editor for blogs
 - 🎭 Profile customization for users
 - 📱 Mobile responsive layout improvements
-- 
+
+---
+
 ## 📚 Project Information
 
-Project Name: Blogify – MERN Stack Training Project
+- **Project Name:** Blogify – MERN Stack Training Project
 
-Semester: MCA 3rd Sem (2025)
+- **Semester:** MCA 3rd Sem (2025)
 
-Institute: Geetanjali Institute of Technical Studies
+- **Institute:** Geetanjali Institute of Technical Studies
 
-Developer: Kavita Sharma
+- **Developer:** Kavita Sharma
 
-Project Goal: Learn full-stack development with Node.js, Express, EJS, and MongoDB through a real-world blog application
+- **Project Goal:** Learn full-stack development with Node.js, Express, EJS, and MongoDB through a real-world blog application
